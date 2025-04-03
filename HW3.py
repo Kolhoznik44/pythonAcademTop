@@ -42,7 +42,7 @@ months_of_year = [
     "Ноябрь",  # 11
     "Декабрь"  # 12
 ]
-
+""" пробую пользоваться репозиторием"""
 if 1 <= month_number <= 12:
     print(f"{month_number} - {months_of_year[month_number - 1]}")
 else:
@@ -55,7 +55,8 @@ else:
 если меньше нуля «Number is negative», если равно нулю
 «Number is equal to zero»
 """
-
+""" трененруюсьjhfsjsfgrbjdrfjfn """
+"""ghjcnjjsanjanfjshe"""
 number = float(input("Введите число: "))
 
 if number > 0:
