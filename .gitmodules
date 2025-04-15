@@ -1,0 +1,3 @@
+[submodule "src/classwork/submod"]
+	path = src/classwork/submod
+	url = https://github.com/Kolhoznik44/submod.git
