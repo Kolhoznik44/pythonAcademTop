@@ -13,5 +13,6 @@ def max_flowers(flowerbed):
                 count += 1
 
     return count
-flowerbed = [0, 1, 1, 0, 0, 0, 1, 0, 0]
+
+flowerbed = [0, 0, 0, 0]
 print(max_flowers(flowerbed))

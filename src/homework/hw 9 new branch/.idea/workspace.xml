@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="189c1cde-b15c-4911-8e39-afc4e6c3d7c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../classwork/submod" beforeDir="false" afterPath="$PROJECT_DIR$/../../classwork/submod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw 8 new branch/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }
