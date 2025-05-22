@@ -7,23 +7,64 @@ top - возвращает значение вверхнего элемента 
 size - вохвращает количество элементов в стэке
 """
 class Stack:
-    def __init__(self):
-        self.__stack = []
+    __container = list()
+    __size = 0
 
-    def __del__(self):
+    def __init__(self):
         pass
 
-    def push(self, item):
-        self.__stack.append(item)
+    def __del__(self):
+        if self.__size > 0:
+            self.__size = 0
+            self.__container.clear()
 
-    def size(self):
-        return len(self.__stack)
+    def push(self, element):
+        self.__container.append(element)
+        self.__size += 1
+
     def pop(self):
-        if not self.is_empty():
-            return self.__stack.pop()
-        return None
+        self.__size -= 1
+        return self.__container.pop()
 
     def top(self):
-        if not self.is_empty():
-            return self.__stack[-1]
-        return None
+        return self.__container[self.__size - 1]
+
+    @property
+    def size(self):
+        return self.__size
+
+    def __getitem__(self, index):
+        return self.__container[index]
+
+    def __delitem__(self, key):
+        self.__container.pop(key)
+
+    def __setitem__(self, key, value):
+        if key > self.__size:
+            while key != self.__size:
+                self.__container.append(0)
+                self.__size += 1
+        elif key < 0:
+            return
+        self.__container.append(value)
+
+    def __contains__(self, item):
+        for elem in self.__container:
+            if elem == item:
+                return True
+        return False
+
+    def indexOf(self, item):
+        # return self.__container.index(item)
+        for i, elem in enumerate(self.__container):
+            if elem == item:
+                return i
+        raise ValueError
+
+    def countOf(self, item):
+        # return self.__container.count(item)
+        count = 0
+        for elem in self.__container:
+            if elem == item:
+                count += 1
+        return count
