@@ -1,4 +1,82 @@
 """
+Задание 1
+Реализуйте класс «Автомобиль». Необходимо хранить
+в полях класса: название модели, год выпуска, производителя, объем двигателя, цвет машины, цену. Реализуйте
+методы класса для ввода данных, вывода данных, реализуйте доступ к отдельным полям через методы класса.
+
+
+class Car:
+    def __init__(self):
+        self.model = ""
+        self.year = 0
+        self.manufacturer = ""
+        self.engine_volume = 0.0
+        self.color = ""
+        self.price = 0.0
+
+    def input_data(self):
+        self.model = input("Введите название модели: ")
+        self.year = int(input("Введите год выпуска: "))
+        self.manufacturer = input("Введите производителя: ")
+        self.engine_volume = float(input("Введите объем двигателя (л): "))
+        self.color = input("Введите цвет машины: ")
+        self.price = float(input("Введите цену: "))
+
+    def display_data(self):
+        print(f"Модель: {self.model}")
+        print(f"Год выпуска: {self.year}")
+        print(f"Производитель: {self.manufacturer}")
+        print(f"Объем двигателя: {self.engine_volume} л")
+        print(f"Цвет: {self.color}")
+        print(f"Цена: {self.price} руб.")
+
+    def get_model(self):
+        return self.model
+
+    def set_model(self, model):
+        self.model = model
+
+    def get_year(self):
+        return self.year
+
+    def set_year(self, year):
+        self.year = year
+
+    def get_manufacturer(self):
+        return self.manufacturer
+
+    def set_manufacturer(self, manufacturer):
+        self.manufacturer = manufacturer
+
+    def get_engine_volume(self):
+        return self.engine_volume
+
+    def set_engine_volume(self, engine_volume):
+        self.engine_volume = engine_volume
+
+    def get_color(self):
+        return self.color
+
+    def set_color(self, color):
+        self.color = color
+
+    def get_price(self):
+        return self.price
+
+    def set_price(self, price):
+        self.price = price
+
+car = Car()
+car.input_data()
+car.display_data()
+
+
+print("Год выпуска:", car.get_year())
+car.set_price(1500000)
+print("Новая цена:", car.get_price())
+"""
+
+"""
 Реализуйте класс «Книга». Необходимо хранить в
 полях класса: название книги, год выпуска, издателя,
 жанр, автора, цену. Реализуйте методы класса для ввода

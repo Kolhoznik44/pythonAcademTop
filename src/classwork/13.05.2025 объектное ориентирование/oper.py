@@ -42,6 +42,7 @@ class Oper:
             return self.__value >= other.__value
         elif isinstance(other, int):
             return self.__value >= other
+
         else:
             return False
 
@@ -164,3 +165,6 @@ class Oper:
             pass
         else:
             return True
+
+    def __str__(self):
+        return self._to_roman()
