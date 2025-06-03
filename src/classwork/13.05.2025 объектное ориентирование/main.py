@@ -47,3 +47,5 @@ if __name__ == "__main__":
     print(f"Zero-Count = {stc.countOf(0)}")
     while stc.size >= 0:
         print(stc.pop())
+
+
